@@ -1,1 +1,1 @@
-<%- partial('_partial/archive', {pagination: config.tag, index: true}) %>
+<%- partial('_partial/archive', {pagination: config.tag, index: true}) %>curl -s https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest | grep tarball_url | cut -d '"' -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1
